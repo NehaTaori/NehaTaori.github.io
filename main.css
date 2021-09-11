@@ -2,3 +2,16 @@
   background-image: url("images/background.jpg");
   background-size: 1340px 750px;
 }
+.wrapper {
+  text-align: center;
+}
+
+.button {
+  font-size: large;
+  position: absolute;
+  top: 50%;
+}
+.button2{
+  font-size: large;
+  top: 50%;
+}

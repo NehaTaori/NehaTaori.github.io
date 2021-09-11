@@ -8,12 +8,40 @@
     <title>Martial Arts Simulator</title>
   </head>
   <body class="bk-image">
+    <div id="main">
     <canvas id="canvas" height="500" , width="500"></canvas>
     <button id="kick">Kick</button>
     <button id="punch">Punch</button>
     <button id="forward">Forward</button>
     <button id="backward">Backward</button>
     <button id="block">Block</button>
+    <button id="back" onclick="goback()" class="button2">Go Back</button>
+  </div>
+  <div class="wrapper">
+
+    <button onclick="hideit()" id="play" class="button" ><b>Play martial arts</b> </button>
+
+  </div>
+    
     <script src="main.js"></script>
   </body>
+  <script type="text/javascript">
+    document.getElementById("main").style.display = "none";
+    function hideit(){
+
+      document.getElementById("main").style.display = "block";
+      document.getElementById("play").style.display = "none";
+      document.getElementById("back").style.display = "block";
+    }
+
+    function goback(){
+
+      document.getElementById("back").style.display = "none";
+      document.getElementById("main").style.display = "none";
+      document.getElementById("play").style.display = "block";
+      document.getElementById("play").style.display.position = "absolute";
+      document.getElementById("play").style.top = "50%";
+
+    }
+  </script>
 </html>
